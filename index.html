@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Accordion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+    <picture id="background-picture">
+        <source media="(min-width: 376px)" srcset="images/background-pattern-desktop.svg">
+        <source width="100%" media="(max-width: 375px)" srcset="images/background-pattern-mobile.svg">
+        <img class="background-image" src="images/background-pattern-desktop.svg" alt="IfItDoesntMatchAnyMedia">
+    </picture>
+    </div>
+
+    <div id="main-container">
+        <section id="the-title">
+            <img src="/images/icon-star.svg" alt="star">
+            <h1 id="title-name">FAQs</h1>
+        </section>
+        <section class="question-container">
+            <div class="yeet">
+            <h1 class="question">What is Frontend Mentor, and how will it help me?</h1><img class="plus" src="/images/icon-plus.svg" alt="plus"></div>
+            <p class="answer"> Frontend Mentor offers realistic coding challenges to help developers improve their
+                frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and
+                ideal for portfolio building.</p>
+        </section>
+        <section class="question-container">
+            <div class="yeet">
+            <h1 class="question">Is Frontend Mentor free?</h1>
+            <img class="plus" src="/images/icon-plus.svg" alt="plus">
+        </div>
+        </section>
+        <section class="question-container">
+            <div class="yeet">
+            <h1 class="question">Can I use Frontend Mentor projects in my portfolio?</h1>
+            <img class="plus" src="/images/icon-plus.svg" alt="plus">
+        </div>
+        </section>
+        <section class="question-container">
+            <div class="yeet">
+            <h1 class="question">How can I get help if I'm stuck on a challenge?</h1>
+            <img class="plus" src="/images/icon-plus.svg" alt="plus">
+        </div>
+        </section>
+    </div>
+    <script rel="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>

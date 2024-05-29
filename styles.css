@@ -1,0 +1,110 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Lightpink: hsl(275, 100%, 97%);
+    --Grayishpurple: hsl(292, 16%, 49%);
+    --Darkpurple: hsl(292, 42%, 14%);
+}
+
+
+body {
+    margin: 0;
+    background-color: var(--Lightpink);
+}
+
+.background-image {
+    width: 100svw;
+    z-index: -1;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* designing for desktop first */
+/* the big bad container */
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: var(--White);
+    padding: 1em 1.5em;
+    border-radius: 16px;
+    box-shadow: 2px 2px 40px 0px rgba(0, 0, 0, 0.2);
+    margin: -10em 40em;
+}
+
+/* title part */
+
+#the-title {
+    display: Flex;
+    font-size: 30px;
+    color: var(--Darkpurple);
+    margin-bottom: -1em;
+    margin-top: -0.5em;
+}
+
+#title-name {
+    margin-left: 0.5em;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* the + / - part */
+.yeet {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-container {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border-bottom: 1px solid var(--Lightpink);
+    padding-bottom: 1em;
+    cursor: pointer;
+}
+
+.question {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--Darkpurple);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* paragraph */
+.answer {
+    display: none;
+    font-size: 16px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--Grayishpurple);
+    padding-top: 0.5em;
+}
+
+/* mobile screen time */
+
+@media only screen and (max-width:376px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    #main-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        background-color: var(--White);
+        margin: -8em 1em 7em 1em;
+        padding: 1em 1.5em;
+        border-radius: 16px;
+        box-shadow: 2px 2px 40px 0px rgba(0, 0, 0, 0.2);
+    }
+}
